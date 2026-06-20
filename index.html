@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="王炜的个人主页：嵌入式实时信号处理、FPGA硬件加速与智能控制方向。"
+    />
+    <title>王炜 | Embedded & FPGA Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回首页">王炜</a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#about">简介</a>
+        <a href="#timeline">成长主线</a>
+        <a href="#projects">项目</a>
+        <a href="#skills">技能</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Dalian University of Technology · Electronic Information Engineering</p>
+          <h1>面向实时信号处理与 FPGA 硬件加速的嵌入式系统实践者</h1>
+          <p class="lead">
+            我关注生物电信号、物理系统建模与智能控制中的低延迟计算问题，
+            正在从 MCU/嵌入式软件开发逐步走向 FPGA 异构计算与算法硬件化。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">查看项目</a>
+            <a class="button secondary" href="#contact">联系我</a>
+          </div>
+        </div>
+        <aside class="profile-panel" aria-label="个人概览">
+          <div class="avatar" aria-hidden="true">WW</div>
+          <dl>
+            <div>
+              <dt>姓名</dt>
+              <dd>王炜</dd>
+            </div>
+            <div>
+              <dt>方向</dt>
+              <dd>嵌入式实时信号处理 / FPGA 加速</dd>
+            </div>
+            <div>
+              <dt>关键词</dt>
+              <dd>STM32 · Zynq/KV260 · FFT · KNN · DMA</dd>
+            </div>
+            <div>
+              <dt>目标</dt>
+              <dd>软硬件协同设计与边缘侧智能计算</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section id="about" class="section narrow">
+        <p class="section-label">About</p>
+        <h2>个人简介</h2>
+        <p>
+          本科就读于大连理工大学电子信息工程专业，专业排名 9/209。项目实践集中在
+          STM32、龙芯 LS2K0300、AMD KV260 等平台，覆盖信号采集、频域分析、模型辨识、
+          手势识别、上位机可视化和机械臂控制等环节。
+        </p>
+      </section>
+
+      <section id="timeline" class="section">
+        <p class="section-label">Growth Path</p>
+        <h2>成长主线</h2>
+        <div class="timeline">
+          <article>
+            <span>01</span>
+            <h3>嵌入式系统入门</h3>
+            <p>从 STM32 外设、ADC/DAC、DMA、SPI、UART 和状态机入手，建立实时系统开发基础。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>信号处理与模型辨识</h3>
+            <p>在电赛 G 题中完成扫频采集、FFT/RMS 分析、滤波类型识别与模型响应重构。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>智能控制系统集成</h3>
+            <p>将肌电识别结果用于仿生手和机械臂控制，打通采集、识别、通信和执行链路。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>FPGA 异构加速探索</h3>
+            <p>围绕 FIR、特征提取和 KNN 分类等模块，探索在 Zynq/KV260 上进行硬件加速。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <p class="section-label">Selected Projects</p>
+        <h2>代表项目</h2>
+        <div class="project-grid">
+          <article class="project-card highlight">
+            <div class="project-meta">FPGA创新设计赛道 · 国家级二等奖</div>
+            <h3>肌电视觉协同机械臂控制系统</h3>
+            <p>
+              基于 AMD KV260、MYO 肌电手环、摄像头与 PIPER 六自由度机械臂，
+              实现自然手势到机械臂运动指令的低延迟映射。
+            </p>
+            <ul>
+              <li>完成 PyQt5 可视化、UDP/ROS 通信、CAN 总线控制与多线程数据交互。</li>
+              <li>探索 FIR 滤波、KNN 分类等信号处理任务向 FPGA PL 端迁移。</li>
+              <li>形成“采集-预处理-识别-执行-反馈”的异构处理流程。</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">2025 电赛 G 题 · 国家级二等奖</div>
+            <h3>电路模型探究装置</h3>
+            <p>
+              面向未知 RLC 滤波电路的自主学习与波形重构任务，基于 STM32G4
+              实现信号生成、双通道采集、幅频扫描与模型识别。
+            </p>
+            <ul>
+              <li>负责嵌入式程序编写，完成 AD9833/AD9910、ADC-DMA、DAC-DMA 等模块。</li>
+              <li>使用 CMSIS-DSP 完成 FFT/RMS 幅值分析和扫频状态机设计。</li>
+              <li>根据辨识结果计算目标频点输出幅值，生成匹配模型响应的重构信号。</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">iCAN 国家级三等奖 / 嵌入式应用赛省级二等奖</div>
+            <h3>基于国产龙芯的肌电识别仿生手</h3>
+            <p>
+              基于龙芯 LS2K0300 平台构建肌电识别仿生手系统，通过 MYO 八通道
+              sEMG 信号和轻量化 KNN 算法识别用户手势。
+            </p>
+            <ul>
+              <li>完成肌电数据采集、训练数据管理、C++ KNN 封装与 UDP 指令发送。</li>
+              <li>实现实时波形显示、多类手势识别和仿生手动作控制。</li>
+              <li>为后续 FPGA 肌电识别加速项目提供算法和数据基础。</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <p class="section-label">Skills</p>
+        <h2>技术栈</h2>
+        <div class="skills-grid">
+          <div>
+            <h3>平台与外设</h3>
+            <p>STM32G4、龙芯 LS2K0300、AMD KV260、ADC/DAC、DMA、SPI、UART、CAN</p>
+          </div>
+          <div>
+            <h3>算法与信号处理</h3>
+            <p>FFT、RMS、扫频分析、模型辨识、KNN、FIR、肌电信号处理</p>
+          </div>
+          <div>
+            <h3>软件与系统</h3>
+            <p>C/C++、Python、PyQt5、MATLAB、UDP、ROS、上位机可视化</p>
+          </div>
+          <div>
+            <h3>FPGA 方向</h3>
+            <p>Zynq PS/PL 协同、AXI DMA、HLS/Verilog 学习中、算法硬件化</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <p class="section-label">Contact</p>
+        <h2>联系我</h2>
+        <p>欢迎围绕嵌入式系统、实时信号处理、FPGA 加速和智能控制方向交流。</p>
+        <div class="contact-links">
+          <a href="mailto:dut_wang_wei@163.com">dut_wang_wei@163.com</a>
+          <a href="tel:+8613949527680">13949527680</a>
+          <a href="https://github.com/Fohen-Wade" aria-label="GitHub 主页">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> 王炜</span>
+      <span>Built for GitHub Pages</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
